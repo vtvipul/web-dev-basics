@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "moment": "^2.29.1"
+  },
+  "name": "express-tutorial",
+  "description": "npm i express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-vtvipul:vtvipul/web-dev-basics.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
