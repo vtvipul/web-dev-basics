@@ -1,2 +1,3 @@
-# web-dev-basics
-html, css, javascript
+# create react app
+
+`npx create-react-app <app_name>`
