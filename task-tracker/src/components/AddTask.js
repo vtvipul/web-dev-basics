@@ -11,7 +11,6 @@ function AddTask({ onAdd }) {
 			alert("Cant leave task field empty");
 		}
 		onAdd({
-			id: Math.floor(Math.random() * 1000000 + 1),
 			text: text,
 			day: day,
 			reminder: reminder,
