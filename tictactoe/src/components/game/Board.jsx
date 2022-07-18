@@ -1,16 +1,17 @@
-import React from "react";
 import Square from "./Square";
 import "./css/board.css";
 import { useState } from "react";
 
-const Board = () => {
-	const [squares, setSquares] = useState(Array(9).fill(null));
-
-	const handleClick = (i) =>
-		setSquares(squares.map((el, index) => (index == i ? "X" : el)));
-
+const Board = ({ squares, handleClick, winner, xTurn }) => {
 	return (
 		<div className="board">
+			<div>
+				<h1>
+					{winner !== null
+						? `Winner: ${winner}`
+						: `Next Move: ${xTurn ? "X" : "O"}`}
+				</h1>
+			</div>
 			<div className="board-row">
 				<Square value={squares[0]} onClick={() => handleClick(0)} />
 				<Square value={squares[1]} onClick={() => handleClick(1)} />
